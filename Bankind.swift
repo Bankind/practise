@@ -1,6 +1,6 @@
 
 
-Git 廖雪峰
+/************   Git 廖雪峰   ************/
 
 start a working area (see also: git help tutorial)
 clone      Clone a repository into a new directory
@@ -32,6 +32,22 @@ collaborate (see also: git help workflows)
 fetch      Download objects and refs from another repository
 pull       Fetch from and integrate with another repository or a local branch
 push       Update remote refs along with associated objects
+
+
+
+/************   Git 命令小结   ************/
+
+01.创建一个文件夹                         mkdir xxx(文件名)
+02.查看当前目录                           pwd
+03.创建一个文件                           touch xxx.xxx
+04.添加文件                              git add xxx(添加xxx文件)
+05.添加所有文件                           git add . (添加当前目录下的所有文件)
+06.提交之前需要做一个备注                   git commit -m"xxx" 输入的是本次提交的说明，可以输入任意内容
+07.提交文件到远程代码仓库                   git push https://..
+08.查看当前状态                           git status
+09.查看本次提交与上一次提交有何不同           git diff (虽然Git告诉我们readme.txt被修改了，但如果能看看具体修改了什么内容)
+10.
+
 
 
 
