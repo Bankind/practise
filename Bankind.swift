@@ -35,7 +35,7 @@ push       Update remote refs along with associated objects
 
 
 
-/************   Git 命令小结   ************/
+/************   Git 命令   ************/
 
 01.创建一个文件夹                         mkdir xxx(文件名)
 02.查看当前目录                           pwd
@@ -46,9 +46,23 @@ push       Update remote refs along with associated objects
 07.提交文件到远程代码仓库                   git push https://..
 08.查看当前状态                           git status
 09.查看本次提交与上一次提交有何不同           git diff (虽然Git告诉我们readme.txt被修改了，但如果能看看具体修改了什么内容)
-10.
+10.查看提交的日志信息                      git log
+11.当觉得显示输出的log消息过多可以使用        git log --pretty=oneline
+12.回滚日志                              git reset --hard xxx (xxx为版本号)
+13.当回滚到之前的版本时,再想回去的时候        git reflog (用来记录你的每一次命令)
 
 
 
+/************   Git 命令小结   ************/
+01.初始化一个Git仓库，使用git init命令。
+添加文件到Git仓库，分两步：
+第一步，使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+第二步，使用命令git commit，完成。
 
+02.要随时掌握工作区的状态，使用git status命令。
+如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+
+03.HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
 
